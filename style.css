@@ -1,33 +1,4 @@
 /* Reset default margin and padding */
-
-/* Style for the horizontal navigation bar */
-nav {
-    background-color: #007BFF;
-    padding: 10px 0;
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: space-around; /* This centers the links */
-    margin: 0; /* Remove any default margins */
-    padding: 0; /* Remove any default padding */
-}
-
-nav li {
-    /* You can add additional styling here, e.g., font-size, color, etc. */
-}
-
-nav a {
-    text-decoration: none;
-    color: #fff;
-    font-weight: bold;
-}
-
-nav a:hover {
-    text-decoration: underline;
-}
-
 * {
     margin: 0;
     padding: 0;
@@ -43,7 +14,32 @@ body {
     height: 100vh;
     margin: 0;
 }
+/* Navigation Bar (Vertical) */
+nav {
+    background-color: #007BFF;
+    width: 200px; /* Set a fixed width for the vertical navigation bar */
+}
 
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    padding: 10px 20px;
+    font-weight: bold;
+}
+
+nav li {
+    margin: 0;
+}
+
+nav a:hover {
+    background-color: #0056b3;
+}
 .container {
     margin-top: 20px;
     background-color: #fff;
@@ -103,4 +99,9 @@ button:hover {
     margin-top: 30px;
     font-size: 20px;
     color: #007BFF;
+}
+@media (max-width: 768px) {
+    nav {
+        width: 100%; /* Full width for smaller screens */
+    }
 }
