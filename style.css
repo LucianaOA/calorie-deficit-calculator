@@ -1,18 +1,6 @@
 /* Reset default margin and padding */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
-/* Global styles */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #FAF3E0;
-    margin: 0;
-}
-
-/* Navigation Bar styles */
+/* Style for the horizontal navigation bar */
 nav {
     background-color: #007BFF;
     padding: 10px 0;
@@ -21,13 +9,13 @@ nav {
 nav ul {
     list-style: none;
     display: flex;
-    justify-content: space-around;
-    margin: 0;
-    padding: 0;
+    justify-content: space-around; /* This centers the links */
+    margin: 0; /* Remove any default margins */
+    padding: 0; /* Remove any default padding */
 }
 
 nav li {
-    /* Additional styling can be added here, e.g., font-size, color, etc. */
+    /* You can add additional styling here, e.g., font-size, color, etc. */
 }
 
 nav a {
@@ -40,7 +28,22 @@ nav a:hover {
     text-decoration: underline;
 }
 
-/* Container styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #FAF3E0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
 .container {
     background-color: #fff;
     max-width: 500px;
@@ -48,8 +51,9 @@ nav a:hover {
     border-radius: 10px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
     text-align: center;
-    margin: 0 auto; /* Center the container horizontally */
-    padding-top: 70px; /* Add top padding to separate the container from the navigation bar */
+    display: flex; /* Add display property for centering */
+    flex-direction: column; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
 }
 
 h1 {
@@ -64,4 +68,38 @@ form {
     align-items: center;
 }
 
-/* Rest of your CSS remains unchanged */
+/* Spacing and style for labels and inputs */
+label {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+input, select {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 12px;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 12px 20px;
+    cursor: pointer;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#result {
+    margin-top: 30px;
+    font-size: 20px;
+    color: #007BFF;
+}
