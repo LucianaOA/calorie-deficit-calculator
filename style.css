@@ -7,7 +7,7 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #FAF3E0;
+    background-color: #f1f1f1;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -17,7 +17,7 @@ body {
 
 /* Add this CSS for the fixed navigation bar */
 .navbar { 
-    background-color: #f1f1f1;
+    background-color: #FAF3E0;
     position: fixed;
     width: 100%;
     top: 0;
