@@ -17,7 +17,7 @@ body {
 
 /* Add this CSS for the fixed navigation bar */
 .navbar { 
-    background-color: #ffffff; 
+    background-color: #fff;
     position: fixed;
     width: 100%;
     top: 0;
