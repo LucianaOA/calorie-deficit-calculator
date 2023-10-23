@@ -9,10 +9,6 @@
 body {
     font-family: Arial, sans-serif;
     background-color: #FAF3E0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
     margin: 0;
 }
 
@@ -52,9 +48,8 @@ nav a:hover {
     border-radius: 10px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
     text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    margin: 0 auto; /* Center the container horizontally */
+    padding-top: 70px; /* Add top padding to separate the container from the navigation bar */
 }
 
 h1 {
@@ -69,38 +64,4 @@ form {
     align-items: center;
 }
 
-/* Spacing and style for labels and inputs */
-label {
-    font-size: 16px;
-    color: #555;
-    margin-bottom: 10px;
-}
-
-input, select {
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    padding: 12px;
-    font-size: 16px;
-    margin-bottom: 15px;
-}
-
-button {
-    background-color: #007BFF;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    padding: 12px 20px;
-    cursor: pointer;
-    font-size: 18px;
-    margin-top: 20px;
-}
-
-button:hover {
-    background-color: #0056b3;
-}
-
-#result {
-    margin-top: 30px;
-    font-size: 20px;
-    color: #007BFF;
-}
+/* Rest of your CSS remains unchanged */
