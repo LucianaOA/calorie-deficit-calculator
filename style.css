@@ -75,8 +75,3 @@ button:hover {
     font-size: 20px;
     color: #007BFF;
 }
-@media (max-width: 768px) {
-    nav {
-        width: 100%; /* Full width for smaller screens */
-    }
-}
