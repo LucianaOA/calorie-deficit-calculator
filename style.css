@@ -4,19 +4,19 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100%;
+    height: 100vh;
     margin: 0;
     padding-top: 100px;
 }
 
-/* Add this CSS for the fixed navigation bar */
+/* Navbar Styles */
 .navbar { 
     background-color: #FAF3E0;
     position: fixed;
     width: 100%;
     top: 0;
 }
-/* Additional styles for the brand and menu sections within the navbar */
+
 .navbar .brand {
     float: left;
     margin: 10px;
@@ -35,9 +35,9 @@ body {
     border-radius: 10px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
     text-align: center;
-    display: flex; /* Add display property for centering */
-    flex-direction: column; /* Center content vertically */
-    align-items: center; /* Center content horizontally */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 h1 {
@@ -52,7 +52,7 @@ form {
     align-items: center;
 }
 
-/* Spacing and style for labels and inputs */
+/* Input and Label Styles */
 label {
     font-size: 16px;
     color: #555;
