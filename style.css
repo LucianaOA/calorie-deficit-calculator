@@ -1,5 +1,9 @@
-/* Your CSS styles for the page */
-/* Minimalist styles example: */
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 body {
     font-family: Arial, sans-serif;
@@ -12,13 +16,12 @@ body {
 }
 
 .container {
-    background-color: #fff6b7;
-    max-width: 1000px;
-    padding: 50px;
-    border-radius: 7px;
+    background-color: #fff;
+    max-width: 400px;
+    padding: 20px;
+    border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
-    margin: 20px auto;
 }
 
 h1 {
@@ -26,11 +29,17 @@ h1 {
     color: #333;
     margin-bottom: 20px;
 }
-/* Add margin to labels and padding to inputs for spacing */
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Spacing and style for labels and inputs */
 label {
     font-size: 16px;
     color: #555;
-    margin-bottom: 10px; /* Adjust margin as needed for spacing */
+    margin-bottom: 10px;
 }
 
 input {
@@ -38,7 +47,34 @@ input {
     border-radius: 3px;
     padding: 10px;
     font-size: 14px;
-    margin-bottom: 10px; /* Adjust margin as needed for spacing */
+    margin-bottom: 15px; /* Adjust for more spacing */
 }
 
-/* Additional CSS styles here */
+select {
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    padding: 10px;
+    font-size: 14px;
+    margin-bottom: 15px; /* Adjust for more spacing */
+}
+
+button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 15px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#result {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #007BFF;
+}
