@@ -6,6 +6,7 @@ body {
     align-items: center;
     height: 100%;
     margin: 0;
+    padding-top: 80px;
 }
 
 /* Add this CSS for the fixed navigation bar */
