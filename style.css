@@ -15,20 +15,24 @@ body {
     margin: 0;
 }
 
+/* Add this CSS for the fixed navigation bar */
 .navbar { 
-    display: flex; 
-    background-color: #0eb358; 
-    font-size: 2rem; 
-    height: 2.5rem; 
+    background-color: #FAF3EF; 
+    position: fixed;
+    width: 100%;
+    top: 0;
+    top: 0;
+}
+/* Additional styles for the brand and menu sections within the navbar */
+.navbar .brand {
+    float: left;
+    margin: 10px;
 }
 
-.menu { 
-    margin: 0 3rem;
-    justify-content: space-around;
-    font-family: 'Franklin Gothic Medium', 
-        'Arial Narrow', 
-        Arial, sans-serif; 
-        } 
+.navbar .menu {
+    float: right;
+    margin: 10px;
+}
 
 .container {
     margin-top: 20px;
