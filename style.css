@@ -18,21 +18,22 @@ body {
 .container {
     background-color: #fff;
     max-width: 400px;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
 
 h1 {
     font-size: 24px;
-    color: #333;
+    color: #007BFF;
     margin-bottom: 20px;
 }
 
 form {
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 /* Spacing and style for labels and inputs */
@@ -42,31 +43,23 @@ label {
     margin-bottom: 10px;
 }
 
-input {
+input, select {
     border: 1px solid #ccc;
-    border-radius: 3px;
-    padding: 10px;
-    font-size: 14px;
-    margin-bottom: 15px; /* Adjust for more spacing */
-}
-
-select {
-    border: 1px solid #ccc;
-    border-radius: 3px;
-    padding: 10px;
-    font-size: 14px;
-    margin-bottom: 15px; /* Adjust for more spacing */
+    border-radius: 5px;
+    padding: 12px;
+    font-size: 16px;
+    margin-bottom: 15px;
 }
 
 button {
     background-color: #007BFF;
     color: #fff;
     border: none;
-    border-radius: 3px;
-    padding: 10px 20px;
+    border-radius: 5px;
+    padding: 12px 20px;
     cursor: pointer;
-    font-size: 16px;
-    margin-top: 15px;
+    font-size: 18px;
+    margin-top: 20px;
 }
 
 button:hover {
@@ -74,7 +67,7 @@ button:hover {
 }
 
 #result {
-    margin-top: 20px;
-    font-size: 18px;
+    margin-top: 30px;
+    font-size: 20px;
     color: #007BFF;
 }
