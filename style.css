@@ -26,5 +26,19 @@ h1 {
     color: #333;
     margin-bottom: 20px;
 }
+/* Add margin to labels and padding to inputs for spacing */
+label {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 10px; /* Adjust margin as needed for spacing */
+}
+
+input {
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    padding: 10px;
+    font-size: 14px;
+    margin-bottom: 10px; /* Adjust margin as needed for spacing */
+}
 
 /* Additional CSS styles here */
