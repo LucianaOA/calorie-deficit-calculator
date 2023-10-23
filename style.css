@@ -16,6 +16,9 @@ body {
     width: 100%;
     top: 0;
 }
+h3 {
+    color: #fff;
+}
 
 .navbar .brand {
     float: left;
