@@ -1,3 +1,5 @@
+/* Reset default margin and padding */
+
 /* Style for the horizontal navigation bar */
 nav {
     background-color: #007BFF;
@@ -8,11 +10,12 @@ nav ul {
     list-style: none;
     display: flex;
     justify-content: space-around; /* This centers the links */
-    margin: 0; 
-    padding: 0;
+    margin: 0; /* Remove any default margins */
+    padding: 0; /* Remove any default padding */
 }
 
 nav li {
+    /* You can add additional styling here, e.g., font-size, color, etc. */
 }
 
 nav a {
