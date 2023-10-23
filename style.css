@@ -17,11 +17,14 @@ body {
 
 .container {
     background-color: #fff;
-    max-width: 300px;
-    padding: 150px;
+    max-width: 500px;
+    padding: 30px;
     border-radius: 10px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
     text-align: center;
+    display: flex; /* Add display property for centering */
+    flex-direction: column; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
 }
 
 h1 {
