@@ -14,8 +14,9 @@ document.addEventListener('DOMContentLoaded', function () {
         // Calculate TDEE (Total Daily Energy Expenditure)
         const tdee = calculateTDEE(bmr, activityLevel);
 
-        // Calculate calorie deficit
-        const calorieDeficit = calculateCalorieDeficit(tdee, goalWeight);
+        // Calculate calorie deficit based on desired weight loss rate (e.g., 0.5 kg per week)
+        const desiredWeightLossRate = 0.5; // Adjust as needed (in kg per week)
+        const calorieDeficit = calculateCalorieDeficit(tdee, goalWeight, desiredWeightLossRate);
 
         // Display the result on the page
         document.getElementById('calorie-deficit').textContent = `${calorieDeficit} calories`;
@@ -36,9 +37,10 @@ function calculateTDEE(bmr, activityLevel) {
     return tdee;
 }
 
-function calculateCalorieDeficit(tdee, goalWeight) {
-    // Calculate the calorie deficit based on the goal weight
-    // Replace the following placeholder formula with the actual calculation
-    const calorieDeficit = tdee - (goalWeight * 500); // Placeholder formula
+function calculateCalorieDeficit(tdee, goalWeight, desiredWeightLossRate) {
+    // Calculate the calorie deficit based on desired weight loss rate
+    // Formula: Calorie Deficit = TDEE - (Calories per kg per week * Weight Loss Rate)
+    const caloriesPerKgPerWeek = 7700; // Approximate number of calories in 1 kg
+    const calorieDeficit = tdee - (desiredWeightLossRate * caloriesPerKgPerWeek);
     return calorieDeficit;
 }
